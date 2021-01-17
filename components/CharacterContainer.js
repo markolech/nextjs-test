@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import styles from '../styles/Home.module.css'
 
@@ -9,7 +9,7 @@ import { useQuery } from 'react-query'
 const Character = () => {
   let apiUrl = 'https://www.breakingbadapi.com/api/'
 
-  const handleDisplayCharacters = () => {
+  const handleRandomizeCharacter = () => {
     console.log('Breaking Bad Characters...')
     console.log(data.length)
 
@@ -26,6 +26,12 @@ const Character = () => {
 
   const [character, setCharacter] = useState(null)
 
+  useEffect(() => {
+    if (data) {
+      handleRandomizeCharacter()
+    }
+  }, [data])
+
   if (isLoading) return 'Loading please wait...'
 
   if (error) return `Error! ${error.message}`
@@ -35,7 +41,7 @@ const Character = () => {
       <Button
         variant='contained'
         color='primary'
-        onClick={handleDisplayCharacters}
+        onClick={handleRandomizeCharacter}
       >
         Randomize
       </Button>
