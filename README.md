@@ -1,6 +1,16 @@
 # Breaking Bad Next.js
 
-I am testing Next.js and using a free Breaking Bad API: https://breakingbadapi.com/
+I am testing and learning how to use Next.js.
+
+I quickly through a quick page using a free Breaking Bad API: https://breakingbadapi.com/
+
+## Purpose
+
+The purpose of this app will be to explore the Next.js framework and test out various concepts and potential integrations.
+
+## Demo
+
+https://nextjs-breaking-bad.vercel.app/
 
 ## Next.js
 
