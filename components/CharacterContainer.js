@@ -23,6 +23,7 @@ const Character = () => {
 
   const [character, setCharacter] = useState(null)
 
+  // Randomize initial character to be displayed on load
   useEffect(() => {
     if (data) {
       handleRandomizeCharacter()
