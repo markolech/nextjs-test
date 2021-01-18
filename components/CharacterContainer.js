@@ -13,7 +13,7 @@ const Character = () => {
     console.log('Breaking Bad Characters...')
     console.log(data.length)
 
-    const index = Math.floor(Math.random() * data.length + 1)
+    const index = Math.floor(Math.random() * data.length)
 
     console.log(JSON.stringify(data[index]))
 
@@ -53,6 +53,10 @@ const Character = () => {
             alt='character'
             src={character?.img}
           ></img>
+          <div>
+            <strong>Nickname: </strong>
+            {character?.nickname}
+          </div>
           <div>
             <strong>Occupation: </strong>
             {character?.occupation}
