@@ -10,9 +10,6 @@ const Character = () => {
   let apiUrl = 'https://www.breakingbadapi.com/api/'
 
   const handleRandomizeCharacter = () => {
-    console.log('Breaking Bad Characters...')
-    console.log(data.length)
-
     const index = Math.floor(Math.random() * data.length)
 
     console.log(JSON.stringify(data[index]))
