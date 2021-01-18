@@ -1,8 +1,6 @@
 # Breaking Bad Next.js
 
-I am testing and learning how to use Next.js.
-
-I quickly through a quick page using a free Breaking Bad API: https://breakingbadapi.com/
+I quickly created A Breaking Bad app using the Next.js framework and a free Breaking Bad API.
 
 ## Purpose
 
@@ -27,3 +25,8 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Breaking Bad API
+
+For more information about the Breaking BAD API: https://breakingbadapi.com/
+
